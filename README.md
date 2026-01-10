@@ -1,11 +1,3 @@
-# Intelerad UK - Sr SW Engineer
-
-# Technical tasks
-
-### Julio Cesar Cortes Rios
-
-
-
 ## **Development Challenge**
 
 ### Pig (Dice game)
