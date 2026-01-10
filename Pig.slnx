@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Pig.Console/Pig.Console.csproj" />
+  <Project Path="Pig.Core/Pig.Core.csproj" />
+  <Project Path="Pig.Tests/Pig.Tests.csproj" />
+  <Project Path="Pig.Variations/Pig.Variations.csproj" />
+</Solution>
