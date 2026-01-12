@@ -1,0 +1,326 @@
+{
+  "source_base_path": "F:/Cesar/Upcoming projects/Job Search/Intelerad/DevelopmentChallenge",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Console.InputHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Console.InputHandler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Console.InputHandler",
+      "Summary": "<p sourcefile=\"api/Pig.Console.InputHandler.yml\" sourcestartlinenumber=\"1\">Provides a centralized utility for capturing and validating user input from the command line.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Console.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Console.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Console",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Core.GameLogic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Core.GameLogic.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Core.GameLogic",
+      "Summary": "<p sourcefile=\"api/Pig.Core.GameLogic.yml\" sourcestartlinenumber=\"1\">Contains the core state-transition logic for the Pig dice game.\nThis class is designed using functional programming principles, where each method\nacts as a pure state transformer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Core.GameState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Core.GameState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Core.GameState",
+      "Summary": "<p sourcefile=\"api/Pig.Core.GameState.yml\" sourcestartlinenumber=\"1\">Represents an immutable snapshot of the Pig game state at a specific point in time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Core.IPigVariation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Core.IPigVariation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Core.IPigVariation",
+      "Summary": "<p sourcefile=\"api/Pig.Core.IPigVariation.yml\" sourcestartlinenumber=\"1\">Defines the contract for a Pig game variation.\nImplementations of this interface encapsulate specific scoring rules,\ndice counts, and turn-ending conditions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Core.PlayerState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Core.PlayerState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Core.PlayerState",
+      "Summary": "<p sourcefile=\"api/Pig.Core.PlayerState.yml\" sourcestartlinenumber=\"1\">Represents an immutable snapshot of a player's standing within the game.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Core.RollResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Core.RollResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Core.RollResult",
+      "Summary": "<p sourcefile=\"api/Pig.Core.RollResult.yml\" sourcestartlinenumber=\"1\">Represents the outcome of a single roll action as evaluated by a game variation.\nThis acts as a data transfer object between the variation rules and the core game logic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Core.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Core",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Tests.VariationTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Tests.VariationTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Tests.VariationTests",
+      "Summary": "<p sourcefile=\"api/Pig.Tests.VariationTests.yml\" sourcestartlinenumber=\"1\">Contains regression tests for the various Pig game strategies.\nValidates that each implementation of <xref href=\"Pig.Core.IPigVariation\" data-throw-if-not-resolved=\"false\"></xref> correctly\ncalculates scores and turn-state flags according to its specific rule set.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Tests",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Variations.BigPig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Variations.BigPig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Variations.BigPig",
+      "Summary": "<p sourcefile=\"api/Pig.Variations.BigPig.yml\" sourcestartlinenumber=\"1\">Implements the &quot;Big Pig&quot; variation of the game, played with two dice.\nThis version rewards doubles and provides a significant bonus for rolling two ones.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Variations.Hog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Variations.Hog.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Variations.Hog",
+      "Summary": "<p sourcefile=\"api/Pig.Variations.Hog.yml\" sourcestartlinenumber=\"1\">Implements the &quot;Hog&quot; variation of the game.\nUnlike standard Pig, Hog is a single-action strategy game where the player\ndecides how many dice to roll at once, but only receives one throw per turn.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Variations.StandardPig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Variations.StandardPig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Variations.StandardPig",
+      "Summary": "<p sourcefile=\"api/Pig.Variations.StandardPig.yml\" sourcestartlinenumber=\"1\">Implements the classic &quot;Standard Pig&quot; rules using a single six-sided die.\nThis variation serves as the foundation for the &quot;push-your-luck&quot; mechanic.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Variations.TwoDicePig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Variations.TwoDicePig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Variations.TwoDicePig",
+      "Summary": "<p sourcefile=\"api/Pig.Variations.TwoDicePig.yml\" sourcestartlinenumber=\"1\">Implements the &quot;Two-Dice Pig&quot; variation.\nThis version increases the stakes by adding a &quot;Snake Eyes&quot; penalty\nthat can reset a player's entire game progress.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Pig.Variations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Pig.Variations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Pig.Variations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PigGame.Tests.GameLogicTests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PigGame.Tests.GameLogicTests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PigGame.Tests.GameLogicTests",
+      "Summary": "<p sourcefile=\"api/PigGame.Tests.GameLogicTests.yml\" sourcestartlinenumber=\"1\">Unit tests for the <xref href=\"Pig.Core.GameLogic\" data-throw-if-not-resolved=\"false\"></xref> static transformer.\nThese tests verify that game state transitions follow the expected rules of Pig\nand its variations without side effects.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PigGame.Tests.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PigGame.Tests.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PigGame.Tests",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

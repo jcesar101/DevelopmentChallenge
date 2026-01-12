@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Variations
+  commentId: N:Pig.Variations
+  id: Pig.Variations
+  children:
+  - Pig.Variations.BigPig
+  - Pig.Variations.Hog
+  - Pig.Variations.StandardPig
+  - Pig.Variations.TwoDicePig
+  langs:
+  - csharp
+  - vb
+  name: Pig.Variations
+  nameWithType: Pig.Variations
+  fullName: Pig.Variations
+  type: Namespace
+  assemblies:
+  - Pig.Variations
+references:
+- uid: Pig.Variations.BigPig
+  commentId: T:Pig.Variations.BigPig
+  href: Pig.Variations.BigPig.html
+  name: BigPig
+  nameWithType: BigPig
+  fullName: Pig.Variations.BigPig
+- uid: Pig.Variations.Hog
+  commentId: T:Pig.Variations.Hog
+  href: Pig.Variations.Hog.html
+  name: Hog
+  nameWithType: Hog
+  fullName: Pig.Variations.Hog
+- uid: Pig.Variations.StandardPig
+  commentId: T:Pig.Variations.StandardPig
+  href: Pig.Variations.StandardPig.html
+  name: StandardPig
+  nameWithType: StandardPig
+  fullName: Pig.Variations.StandardPig
+- uid: Pig.Variations.TwoDicePig
+  commentId: T:Pig.Variations.TwoDicePig
+  href: Pig.Variations.TwoDicePig.html
+  name: TwoDicePig
+  nameWithType: TwoDicePig
+  fullName: Pig.Variations.TwoDicePig

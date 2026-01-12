@@ -1,0 +1,59 @@
+### YamlMime:TableOfContent
+items:
+- uid: Pig.Console
+  name: Pig.Console
+  type: Namespace
+  items:
+  - uid: Pig.Console.InputHandler
+    name: InputHandler
+    type: Class
+- uid: Pig.Core
+  name: Pig.Core
+  type: Namespace
+  items:
+  - uid: Pig.Core.GameLogic
+    name: GameLogic
+    type: Class
+  - uid: Pig.Core.GameState
+    name: GameState
+    type: Class
+  - uid: Pig.Core.IPigVariation
+    name: IPigVariation
+    type: Interface
+  - uid: Pig.Core.PlayerState
+    name: PlayerState
+    type: Class
+  - uid: Pig.Core.RollResult
+    name: RollResult
+    type: Class
+- uid: Pig.Tests
+  name: Pig.Tests
+  type: Namespace
+  items:
+  - uid: Pig.Tests.VariationTests
+    name: VariationTests
+    type: Class
+- uid: Pig.Variations
+  name: Pig.Variations
+  type: Namespace
+  items:
+  - uid: Pig.Variations.BigPig
+    name: BigPig
+    type: Class
+  - uid: Pig.Variations.Hog
+    name: Hog
+    type: Class
+  - uid: Pig.Variations.StandardPig
+    name: StandardPig
+    type: Class
+  - uid: Pig.Variations.TwoDicePig
+    name: TwoDicePig
+    type: Class
+- uid: PigGame.Tests
+  name: PigGame.Tests
+  type: Namespace
+  items:
+  - uid: PigGame.Tests.GameLogicTests
+    name: GameLogicTests
+    type: Class
+memberLayout: SamePage

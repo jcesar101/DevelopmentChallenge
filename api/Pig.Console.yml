@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Console
+  commentId: N:Pig.Console
+  id: Pig.Console
+  children:
+  - Pig.Console.InputHandler
+  langs:
+  - csharp
+  - vb
+  name: Pig.Console
+  nameWithType: Pig.Console
+  fullName: Pig.Console
+  type: Namespace
+  assemblies:
+  - Pig.Console
+references:
+- uid: Pig.Console.InputHandler
+  commentId: T:Pig.Console.InputHandler
+  href: Pig.Console.InputHandler.html
+  name: InputHandler
+  nameWithType: InputHandler
+  fullName: Pig.Console.InputHandler

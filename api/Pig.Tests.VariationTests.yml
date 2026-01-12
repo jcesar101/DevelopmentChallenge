@@ -1,0 +1,622 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Tests.VariationTests
+  commentId: T:Pig.Tests.VariationTests
+  id: VariationTests
+  parent: Pig.Tests
+  children:
+  - Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive
+  - Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue
+  - Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero
+  - Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  - Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn
+  - Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore
+  langs:
+  - csharp
+  - vb
+  name: VariationTests
+  nameWithType: VariationTests
+  fullName: Pig.Tests.VariationTests
+  type: Class
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: VariationTests
+    path: Pig.Tests/VariationTests.cs
+    startLine: 7
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Contains regression tests for the various Pig game strategies.
+
+    Validates that each implementation of <xref href="Pig.Core.IPigVariation" data-throw-if-not-resolved="false"></xref> correctly 
+
+    calculates scores and turn-state flags according to its specific rule set.
+  example: []
+  syntax:
+    content: public class VariationTests
+    content.vb: Public Class VariationTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn
+  commentId: M:Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn
+  id: StandardPig_RollingOne_EndsTurn
+  parent: Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: StandardPig_RollingOne_EndsTurn()
+  nameWithType: VariationTests.StandardPig_RollingOne_EndsTurn()
+  fullName: Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn()
+  type: Method
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: StandardPig_RollingOne_EndsTurn
+    path: Pig.Tests/VariationTests.cs
+    startLine: 13
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Validates the Standard Pig rule: Rolling a single '1' results in zero points 
+
+    and ends the player's turn.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void StandardPig_RollingOne_EndsTurn()
+    content.vb: >-
+      <Fact>
+
+      Public Sub StandardPig_RollingOne_EndsTurn()
+  overload: Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore
+  commentId: M:Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore
+  id: TwoDicePig_DoubleOnes_WipesTotalScore
+  parent: Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: TwoDicePig_DoubleOnes_WipesTotalScore()
+  nameWithType: VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore()
+  fullName: Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore()
+  type: Method
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: TwoDicePig_DoubleOnes_WipesTotalScore
+    path: Pig.Tests/VariationTests.cs
+    startLine: 27
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Validates the Two-Dice Pig "Snake Eyes" rule: Rolling two '1's results in 
+
+    the loss of the player's entire accumulated game score.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void TwoDicePig_DoubleOnes_WipesTotalScore()
+    content.vb: >-
+      <Fact>
+
+      Public Sub TwoDicePig_DoubleOnes_WipesTotalScore()
+  overload: Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue
+  commentId: M:Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue
+  id: BigPig_DoubleSixes_ScoresDoubleValue
+  parent: Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: BigPig_DoubleSixes_ScoresDoubleValue()
+  nameWithType: VariationTests.BigPig_DoubleSixes_ScoresDoubleValue()
+  fullName: Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue()
+  type: Method
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: BigPig_DoubleSixes_ScoresDoubleValue
+    path: Pig.Tests/VariationTests.cs
+    startLine: 41
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Validates the Big Pig bonus: Rolling doubles (excluding ones) should 
+
+    reward twice the sum of the dice and allow the turn to continue.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void BigPig_DoubleSixes_ScoresDoubleValue()
+    content.vb: >-
+      <Fact>
+
+      Public Sub BigPig_DoubleSixes_ScoresDoubleValue()
+  overload: Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive
+  commentId: M:Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive
+  id: BigPig_DoubleOnes_ScoresTwentyFive
+  parent: Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: BigPig_DoubleOnes_ScoresTwentyFive()
+  nameWithType: VariationTests.BigPig_DoubleOnes_ScoresTwentyFive()
+  fullName: Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive()
+  type: Method
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: BigPig_DoubleOnes_ScoresTwentyFive
+    path: Pig.Tests/VariationTests.cs
+    startLine: 55
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Validates the Big Pig special case: Double ones are worth a fixed 
+
+    25 points rather than wiping the score.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void BigPig_DoubleOnes_ScoresTwentyFive()
+    content.vb: >-
+      <Fact>
+
+      Public Sub BigPig_DoubleOnes_ScoresTwentyFive()
+  overload: Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero
+  commentId: M:Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero
+  id: Hog_AnyOneInBatch_ReturnsZero
+  parent: Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: Hog_AnyOneInBatch_ReturnsZero()
+  nameWithType: VariationTests.Hog_AnyOneInBatch_ReturnsZero()
+  fullName: Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero()
+  type: Method
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: Hog_AnyOneInBatch_ReturnsZero
+    path: Pig.Tests/VariationTests.cs
+    startLine: 69
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Validates the Hog rule: If any die in a multi-die throw is a '1', 
+
+    the entire throw scores zero and the turn ends.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Hog_AnyOneInBatch_ReturnsZero()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Hog_AnyOneInBatch_ReturnsZero()
+  overload: Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+- uid: Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  commentId: M:Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  id: Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  parent: Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer()
+  nameWithType: VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer()
+  fullName: Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer()
+  type: Method
+  source:
+    remote:
+      path: Pig.Tests/VariationTests.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+    path: Pig.Tests/VariationTests.cs
+    startLine: 83
+  assemblies:
+  - Pig.Tests
+  namespace: Pig.Tests
+  summary: >-
+    Validates the Hog Single-Throw mechanic: A successful throw should 
+
+    automatically bank the points and advance the turn without requiring a separate 'Hold' action.
+  example: []
+  syntax:
+    content: >-
+      [Fact]
+
+      public void Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer()
+    content.vb: >-
+      <Fact>
+
+      Public Sub Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer()
+  overload: Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer*
+  attributes:
+  - type: Xunit.FactAttribute
+    ctor: Xunit.FactAttribute.#ctor
+    arguments: []
+references:
+- uid: Pig.Core.IPigVariation
+  commentId: T:Pig.Core.IPigVariation
+  parent: Pig.Core
+  href: Pig.Core.IPigVariation.html
+  name: IPigVariation
+  nameWithType: IPigVariation
+  fullName: Pig.Core.IPigVariation
+- uid: Pig.Tests
+  commentId: N:Pig.Tests
+  href: Pig.html
+  name: Pig.Tests
+  nameWithType: Pig.Tests
+  fullName: Pig.Tests
+  spec.csharp:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Tests
+    name: Tests
+    href: Pig.Tests.html
+  spec.vb:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Tests
+    name: Tests
+    href: Pig.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Pig.Core
+  commentId: N:Pig.Core
+  href: Pig.html
+  name: Pig.Core
+  nameWithType: Pig.Core
+  fullName: Pig.Core
+  spec.csharp:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+  spec.vb:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn*
+  commentId: Overload:Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn
+  href: Pig.Tests.VariationTests.html#Pig_Tests_VariationTests_StandardPig_RollingOne_EndsTurn
+  name: StandardPig_RollingOne_EndsTurn
+  nameWithType: VariationTests.StandardPig_RollingOne_EndsTurn
+  fullName: Pig.Tests.VariationTests.StandardPig_RollingOne_EndsTurn
+- uid: Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore*
+  commentId: Overload:Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore
+  href: Pig.Tests.VariationTests.html#Pig_Tests_VariationTests_TwoDicePig_DoubleOnes_WipesTotalScore
+  name: TwoDicePig_DoubleOnes_WipesTotalScore
+  nameWithType: VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore
+  fullName: Pig.Tests.VariationTests.TwoDicePig_DoubleOnes_WipesTotalScore
+- uid: Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue*
+  commentId: Overload:Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue
+  href: Pig.Tests.VariationTests.html#Pig_Tests_VariationTests_BigPig_DoubleSixes_ScoresDoubleValue
+  name: BigPig_DoubleSixes_ScoresDoubleValue
+  nameWithType: VariationTests.BigPig_DoubleSixes_ScoresDoubleValue
+  fullName: Pig.Tests.VariationTests.BigPig_DoubleSixes_ScoresDoubleValue
+- uid: Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive*
+  commentId: Overload:Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive
+  href: Pig.Tests.VariationTests.html#Pig_Tests_VariationTests_BigPig_DoubleOnes_ScoresTwentyFive
+  name: BigPig_DoubleOnes_ScoresTwentyFive
+  nameWithType: VariationTests.BigPig_DoubleOnes_ScoresTwentyFive
+  fullName: Pig.Tests.VariationTests.BigPig_DoubleOnes_ScoresTwentyFive
+- uid: Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero*
+  commentId: Overload:Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero
+  href: Pig.Tests.VariationTests.html#Pig_Tests_VariationTests_Hog_AnyOneInBatch_ReturnsZero
+  name: Hog_AnyOneInBatch_ReturnsZero
+  nameWithType: VariationTests.Hog_AnyOneInBatch_ReturnsZero
+  fullName: Pig.Tests.VariationTests.Hog_AnyOneInBatch_ReturnsZero
+- uid: Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer*
+  commentId: Overload:Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  href: Pig.Tests.VariationTests.html#Pig_Tests_VariationTests_Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  name: Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  nameWithType: VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer
+  fullName: Pig.Tests.VariationTests.Hog_SuccessfulRoll_AddsPointsAndSwitchesPlayer

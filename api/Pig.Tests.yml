@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Tests
+  commentId: N:Pig.Tests
+  id: Pig.Tests
+  children:
+  - Pig.Tests.VariationTests
+  langs:
+  - csharp
+  - vb
+  name: Pig.Tests
+  nameWithType: Pig.Tests
+  fullName: Pig.Tests
+  type: Namespace
+  assemblies:
+  - Pig.Tests
+references:
+- uid: Pig.Tests.VariationTests
+  commentId: T:Pig.Tests.VariationTests
+  href: Pig.Tests.VariationTests.html
+  name: VariationTests
+  nameWithType: VariationTests
+  fullName: Pig.Tests.VariationTests

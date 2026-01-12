@@ -1,0 +1,750 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Variations.TwoDicePig
+  commentId: T:Pig.Variations.TwoDicePig
+  id: TwoDicePig
+  parent: Pig.Variations
+  children:
+  - Pig.Variations.TwoDicePig.#ctor(System.Int32)
+  - Pig.Variations.TwoDicePig.DiceCount
+  - Pig.Variations.TwoDicePig.Name
+  - Pig.Variations.TwoDicePig.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  - Pig.Variations.TwoDicePig.WinningScore
+  langs:
+  - csharp
+  - vb
+  name: TwoDicePig
+  nameWithType: TwoDicePig
+  fullName: Pig.Variations.TwoDicePig
+  type: Class
+  source:
+    remote:
+      path: Pig.Variations/TwoDicePig.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: TwoDicePig
+    path: Pig.Variations/TwoDicePig.cs
+    startLine: 9
+  assemblies:
+  - Pig.Variations
+  namespace: Pig.Variations
+  summary: >-
+    Implements the "Two-Dice Pig" variation. 
+
+    This version increases the stakes by adding a "Snake Eyes" penalty 
+
+    that can reset a player's entire game progress.
+  example: []
+  syntax:
+    content: 'public class TwoDicePig : IPigVariation'
+    content.vb: Public Class TwoDicePig Implements IPigVariation
+  inheritance:
+  - System.Object
+  implements:
+  - Pig.Core.IPigVariation
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Pig.Variations.TwoDicePig.#ctor(System.Int32)
+  commentId: M:Pig.Variations.TwoDicePig.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: Pig.Variations.TwoDicePig
+  langs:
+  - csharp
+  - vb
+  name: TwoDicePig(int)
+  nameWithType: TwoDicePig.TwoDicePig(int)
+  fullName: Pig.Variations.TwoDicePig.TwoDicePig(int)
+  type: Constructor
+  source:
+    remote:
+      path: Pig.Variations/TwoDicePig.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: .ctor
+    path: Pig.Variations/TwoDicePig.cs
+    startLine: 9
+  assemblies:
+  - Pig.Variations
+  namespace: Pig.Variations
+  summary: >-
+    Implements the "Two-Dice Pig" variation. 
+
+    This version increases the stakes by adding a "Snake Eyes" penalty 
+
+    that can reset a player's entire game progress.
+  example: []
+  syntax:
+    content: public TwoDicePig(int winningScore = 100)
+    parameters:
+    - id: winningScore
+      type: System.Int32
+    content.vb: Public Sub New(winningScore As Integer = 100)
+  overload: Pig.Variations.TwoDicePig.#ctor*
+  nameWithType.vb: TwoDicePig.New(Integer)
+  fullName.vb: Pig.Variations.TwoDicePig.New(Integer)
+  name.vb: New(Integer)
+- uid: Pig.Variations.TwoDicePig.Name
+  commentId: P:Pig.Variations.TwoDicePig.Name
+  id: Name
+  parent: Pig.Variations.TwoDicePig
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: TwoDicePig.Name
+  fullName: Pig.Variations.TwoDicePig.Name
+  type: Property
+  source:
+    remote:
+      path: Pig.Variations/TwoDicePig.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: Name
+    path: Pig.Variations/TwoDicePig.cs
+    startLine: 14
+  assemblies:
+  - Pig.Variations
+  namespace: Pig.Variations
+  summary: Gets the display name for this variation.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Pig.Variations.TwoDicePig.Name*
+  implements:
+  - Pig.Core.IPigVariation.Name
+- uid: Pig.Variations.TwoDicePig.WinningScore
+  commentId: P:Pig.Variations.TwoDicePig.WinningScore
+  id: WinningScore
+  parent: Pig.Variations.TwoDicePig
+  langs:
+  - csharp
+  - vb
+  name: WinningScore
+  nameWithType: TwoDicePig.WinningScore
+  fullName: Pig.Variations.TwoDicePig.WinningScore
+  type: Property
+  source:
+    remote:
+      path: Pig.Variations/TwoDicePig.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: WinningScore
+    path: Pig.Variations/TwoDicePig.cs
+    startLine: 19
+  assemblies:
+  - Pig.Variations
+  namespace: Pig.Variations
+  summary: Gets the score required to win the game.
+  example: []
+  syntax:
+    content: public int WinningScore { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property WinningScore As Integer
+  overload: Pig.Variations.TwoDicePig.WinningScore*
+  implements:
+  - Pig.Core.IPigVariation.WinningScore
+- uid: Pig.Variations.TwoDicePig.DiceCount
+  commentId: P:Pig.Variations.TwoDicePig.DiceCount
+  id: DiceCount
+  parent: Pig.Variations.TwoDicePig
+  langs:
+  - csharp
+  - vb
+  name: DiceCount
+  nameWithType: TwoDicePig.DiceCount
+  fullName: Pig.Variations.TwoDicePig.DiceCount
+  type: Property
+  source:
+    remote:
+      path: Pig.Variations/TwoDicePig.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: DiceCount
+    path: Pig.Variations/TwoDicePig.cs
+    startLine: 24
+  assemblies:
+  - Pig.Variations
+  namespace: Pig.Variations
+  summary: This variation is played with two dice per roll.
+  example: []
+  syntax:
+    content: public int DiceCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property DiceCount As Integer
+  overload: Pig.Variations.TwoDicePig.DiceCount*
+  implements:
+  - Pig.Core.IPigVariation.DiceCount
+- uid: Pig.Variations.TwoDicePig.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  commentId: M:Pig.Variations.TwoDicePig.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  id: ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: Pig.Variations.TwoDicePig
+  langs:
+  - csharp
+  - vb
+  name: ProcessRoll(IEnumerable<int>)
+  nameWithType: TwoDicePig.ProcessRoll(IEnumerable<int>)
+  fullName: Pig.Variations.TwoDicePig.ProcessRoll(System.Collections.Generic.IEnumerable<int>)
+  type: Method
+  source:
+    remote:
+      path: Pig.Variations/TwoDicePig.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: ProcessRoll
+    path: Pig.Variations/TwoDicePig.cs
+    startLine: 45
+  assemblies:
+  - Pig.Variations
+  namespace: Pig.Variations
+  summary: >-
+    Processes a two-dice roll according to the following rules:
+
+    <ul><li><span class="term">Snake Eyes (Two 1s)</span>The player loses their entire total score and the turn ends.</li><li><span class="term">Single 1</span>The player scores 0 for the turn and the turn ends.</li><li><span class="term">No 1s</span>The sum of both dice is added to the turn bank.</li></ul>
+  example: []
+  syntax:
+    content: public RollResult ProcessRoll(IEnumerable<int> dice)
+    parameters:
+    - id: dice
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: The values of the two dice rolled.
+    return:
+      type: Pig.Core.RollResult
+      description: A <xref href="Pig.Core.RollResult" data-throw-if-not-resolved="false"></xref> reflecting the outcome of the two-dice throw.
+    content.vb: Public Function ProcessRoll(dice As IEnumerable(Of Integer)) As RollResult
+  overload: Pig.Variations.TwoDicePig.ProcessRoll*
+  implements:
+  - Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  nameWithType.vb: TwoDicePig.ProcessRoll(IEnumerable(Of Integer))
+  fullName.vb: Pig.Variations.TwoDicePig.ProcessRoll(System.Collections.Generic.IEnumerable(Of Integer))
+  name.vb: ProcessRoll(IEnumerable(Of Integer))
+references:
+- uid: Pig.Variations
+  commentId: N:Pig.Variations
+  href: Pig.html
+  name: Pig.Variations
+  nameWithType: Pig.Variations
+  fullName: Pig.Variations
+  spec.csharp:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Variations
+    name: Variations
+    href: Pig.Variations.html
+  spec.vb:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Variations
+    name: Variations
+    href: Pig.Variations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Pig.Core.IPigVariation
+  commentId: T:Pig.Core.IPigVariation
+  parent: Pig.Core
+  href: Pig.Core.IPigVariation.html
+  name: IPigVariation
+  nameWithType: IPigVariation
+  fullName: Pig.Core.IPigVariation
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Pig.Core
+  commentId: N:Pig.Core
+  href: Pig.html
+  name: Pig.Core
+  nameWithType: Pig.Core
+  fullName: Pig.Core
+  spec.csharp:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+  spec.vb:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+- uid: Pig.Variations.TwoDicePig.#ctor*
+  commentId: Overload:Pig.Variations.TwoDicePig.#ctor
+  href: Pig.Variations.TwoDicePig.html#Pig_Variations_TwoDicePig__ctor_System_Int32_
+  name: TwoDicePig
+  nameWithType: TwoDicePig.TwoDicePig
+  fullName: Pig.Variations.TwoDicePig.TwoDicePig
+  nameWithType.vb: TwoDicePig.New
+  fullName.vb: Pig.Variations.TwoDicePig.New
+  name.vb: New
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Pig.Variations.TwoDicePig.Name*
+  commentId: Overload:Pig.Variations.TwoDicePig.Name
+  href: Pig.Variations.TwoDicePig.html#Pig_Variations_TwoDicePig_Name
+  name: Name
+  nameWithType: TwoDicePig.Name
+  fullName: Pig.Variations.TwoDicePig.Name
+- uid: Pig.Core.IPigVariation.Name
+  commentId: P:Pig.Core.IPigVariation.Name
+  parent: Pig.Core.IPigVariation
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_Name
+  name: Name
+  nameWithType: IPigVariation.Name
+  fullName: Pig.Core.IPigVariation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Pig.Variations.TwoDicePig.WinningScore*
+  commentId: Overload:Pig.Variations.TwoDicePig.WinningScore
+  href: Pig.Variations.TwoDicePig.html#Pig_Variations_TwoDicePig_WinningScore
+  name: WinningScore
+  nameWithType: TwoDicePig.WinningScore
+  fullName: Pig.Variations.TwoDicePig.WinningScore
+- uid: Pig.Core.IPigVariation.WinningScore
+  commentId: P:Pig.Core.IPigVariation.WinningScore
+  parent: Pig.Core.IPigVariation
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_WinningScore
+  name: WinningScore
+  nameWithType: IPigVariation.WinningScore
+  fullName: Pig.Core.IPigVariation.WinningScore
+- uid: Pig.Variations.TwoDicePig.DiceCount*
+  commentId: Overload:Pig.Variations.TwoDicePig.DiceCount
+  href: Pig.Variations.TwoDicePig.html#Pig_Variations_TwoDicePig_DiceCount
+  name: DiceCount
+  nameWithType: TwoDicePig.DiceCount
+  fullName: Pig.Variations.TwoDicePig.DiceCount
+- uid: Pig.Core.IPigVariation.DiceCount
+  commentId: P:Pig.Core.IPigVariation.DiceCount
+  parent: Pig.Core.IPigVariation
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_DiceCount
+  name: DiceCount
+  nameWithType: IPigVariation.DiceCount
+  fullName: Pig.Core.IPigVariation.DiceCount
+- uid: Pig.Core.RollResult
+  commentId: T:Pig.Core.RollResult
+  parent: Pig.Core
+  href: Pig.Core.RollResult.html
+  name: RollResult
+  nameWithType: RollResult
+  fullName: Pig.Core.RollResult
+- uid: Pig.Variations.TwoDicePig.ProcessRoll*
+  commentId: Overload:Pig.Variations.TwoDicePig.ProcessRoll
+  href: Pig.Variations.TwoDicePig.html#Pig_Variations_TwoDicePig_ProcessRoll_System_Collections_Generic_IEnumerable_System_Int32__
+  name: ProcessRoll
+  nameWithType: TwoDicePig.ProcessRoll
+  fullName: Pig.Variations.TwoDicePig.ProcessRoll
+- uid: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  commentId: M:Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: Pig.Core.IPigVariation
+  isExternal: true
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_ProcessRoll_System_Collections_Generic_IEnumerable_System_Int32__
+  name: ProcessRoll(IEnumerable<int>)
+  nameWithType: IPigVariation.ProcessRoll(IEnumerable<int>)
+  fullName: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable<int>)
+  nameWithType.vb: IPigVariation.ProcessRoll(IEnumerable(Of Integer))
+  fullName.vb: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable(Of Integer))
+  name.vb: ProcessRoll(IEnumerable(Of Integer))
+  spec.csharp:
+  - uid: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+    name: ProcessRoll
+    href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_ProcessRoll_System_Collections_Generic_IEnumerable_System_Int32__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+    name: ProcessRoll
+    href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_ProcessRoll_System_Collections_Generic_IEnumerable_System_Int32__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

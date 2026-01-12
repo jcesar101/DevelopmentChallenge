@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: PigGame.Tests
+  commentId: N:PigGame.Tests
+  id: PigGame.Tests
+  children:
+  - PigGame.Tests.GameLogicTests
+  langs:
+  - csharp
+  - vb
+  name: PigGame.Tests
+  nameWithType: PigGame.Tests
+  fullName: PigGame.Tests
+  type: Namespace
+  assemblies:
+  - Pig.Tests
+references:
+- uid: PigGame.Tests.GameLogicTests
+  commentId: T:PigGame.Tests.GameLogicTests
+  href: PigGame.Tests.GameLogicTests.html
+  name: GameLogicTests
+  nameWithType: GameLogicTests
+  fullName: PigGame.Tests.GameLogicTests

@@ -1,0 +1,356 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Core.IPigVariation
+  commentId: T:Pig.Core.IPigVariation
+  id: IPigVariation
+  parent: Pig.Core
+  children:
+  - Pig.Core.IPigVariation.DiceCount
+  - Pig.Core.IPigVariation.Name
+  - Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  - Pig.Core.IPigVariation.WinningScore
+  langs:
+  - csharp
+  - vb
+  name: IPigVariation
+  nameWithType: IPigVariation
+  fullName: Pig.Core.IPigVariation
+  type: Interface
+  source:
+    remote:
+      path: Pig.Core/IPigVariation.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: IPigVariation
+    path: Pig.Core/IPigVariation.cs
+    startLine: 7
+  assemblies:
+  - Pig.Core
+  namespace: Pig.Core
+  summary: >-
+    Defines the contract for a Pig game variation. 
+
+    Implementations of this interface encapsulate specific scoring rules, 
+
+    dice counts, and turn-ending conditions.
+  example: []
+  syntax:
+    content: public interface IPigVariation
+    content.vb: Public Interface IPigVariation
+- uid: Pig.Core.IPigVariation.Name
+  commentId: P:Pig.Core.IPigVariation.Name
+  id: Name
+  parent: Pig.Core.IPigVariation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IPigVariation.Name
+  fullName: Pig.Core.IPigVariation.Name
+  type: Property
+  source:
+    remote:
+      path: Pig.Core/IPigVariation.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: Name
+    path: Pig.Core/IPigVariation.cs
+    startLine: 12
+  assemblies:
+  - Pig.Core
+  namespace: Pig.Core
+  summary: The display name of the variation (e.g., "Big Pig" or "Hog").
+  example: []
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: Pig.Core.IPigVariation.Name*
+- uid: Pig.Core.IPigVariation.WinningScore
+  commentId: P:Pig.Core.IPigVariation.WinningScore
+  id: WinningScore
+  parent: Pig.Core.IPigVariation
+  langs:
+  - csharp
+  - vb
+  name: WinningScore
+  nameWithType: IPigVariation.WinningScore
+  fullName: Pig.Core.IPigVariation.WinningScore
+  type: Property
+  source:
+    remote:
+      path: Pig.Core/IPigVariation.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: WinningScore
+    path: Pig.Core/IPigVariation.cs
+    startLine: 17
+  assemblies:
+  - Pig.Core
+  namespace: Pig.Core
+  summary: The total score required for a player to win the game under this variation.
+  example: []
+  syntax:
+    content: int WinningScore { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property WinningScore As Integer
+  overload: Pig.Core.IPigVariation.WinningScore*
+- uid: Pig.Core.IPigVariation.DiceCount
+  commentId: P:Pig.Core.IPigVariation.DiceCount
+  id: DiceCount
+  parent: Pig.Core.IPigVariation
+  langs:
+  - csharp
+  - vb
+  name: DiceCount
+  nameWithType: IPigVariation.DiceCount
+  fullName: Pig.Core.IPigVariation.DiceCount
+  type: Property
+  source:
+    remote:
+      path: Pig.Core/IPigVariation.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: DiceCount
+    path: Pig.Core/IPigVariation.cs
+    startLine: 22
+  assemblies:
+  - Pig.Core
+  namespace: Pig.Core
+  summary: The number of dice used for a single roll action in this variation.
+  example: []
+  syntax:
+    content: int DiceCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DiceCount As Integer
+  overload: Pig.Core.IPigVariation.DiceCount*
+- uid: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  commentId: M:Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  id: ProcessRoll(System.Collections.Generic.IEnumerable{System.Int32})
+  parent: Pig.Core.IPigVariation
+  langs:
+  - csharp
+  - vb
+  name: ProcessRoll(IEnumerable<int>)
+  nameWithType: IPigVariation.ProcessRoll(IEnumerable<int>)
+  fullName: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable<int>)
+  type: Method
+  source:
+    remote:
+      path: Pig.Core/IPigVariation.cs
+      branch: main
+      repo: https://github.com/jcesar101/DevelopmentChallenge.git
+    id: ProcessRoll
+    path: Pig.Core/IPigVariation.cs
+    startLine: 32
+  assemblies:
+  - Pig.Core
+  namespace: Pig.Core
+  summary: Evaluates the outcome of a dice roll based on the specific rules of the variation.
+  example: []
+  syntax:
+    content: RollResult ProcessRoll(IEnumerable<int> dice)
+    parameters:
+    - id: dice
+      type: System.Collections.Generic.IEnumerable{System.Int32}
+      description: The collection of dice values rolled.
+    return:
+      type: Pig.Core.RollResult
+      description: >-
+        A <xref href="Pig.Core.RollResult" data-throw-if-not-resolved="false"></xref> containing the score for the roll 
+
+        and flags indicating if the turn is over or if the total score is lost.
+    content.vb: Function ProcessRoll(dice As IEnumerable(Of Integer)) As RollResult
+  overload: Pig.Core.IPigVariation.ProcessRoll*
+  nameWithType.vb: IPigVariation.ProcessRoll(IEnumerable(Of Integer))
+  fullName.vb: Pig.Core.IPigVariation.ProcessRoll(System.Collections.Generic.IEnumerable(Of Integer))
+  name.vb: ProcessRoll(IEnumerable(Of Integer))
+references:
+- uid: Pig.Core
+  commentId: N:Pig.Core
+  href: Pig.html
+  name: Pig.Core
+  nameWithType: Pig.Core
+  fullName: Pig.Core
+  spec.csharp:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+  spec.vb:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+- uid: Pig.Core.IPigVariation.Name*
+  commentId: Overload:Pig.Core.IPigVariation.Name
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_Name
+  name: Name
+  nameWithType: IPigVariation.Name
+  fullName: Pig.Core.IPigVariation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Pig.Core.IPigVariation.WinningScore*
+  commentId: Overload:Pig.Core.IPigVariation.WinningScore
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_WinningScore
+  name: WinningScore
+  nameWithType: IPigVariation.WinningScore
+  fullName: Pig.Core.IPigVariation.WinningScore
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Pig.Core.IPigVariation.DiceCount*
+  commentId: Overload:Pig.Core.IPigVariation.DiceCount
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_DiceCount
+  name: DiceCount
+  nameWithType: IPigVariation.DiceCount
+  fullName: Pig.Core.IPigVariation.DiceCount
+- uid: Pig.Core.RollResult
+  commentId: T:Pig.Core.RollResult
+  parent: Pig.Core
+  href: Pig.Core.RollResult.html
+  name: RollResult
+  nameWithType: RollResult
+  fullName: Pig.Core.RollResult
+- uid: Pig.Core.IPigVariation.ProcessRoll*
+  commentId: Overload:Pig.Core.IPigVariation.ProcessRoll
+  href: Pig.Core.IPigVariation.html#Pig_Core_IPigVariation_ProcessRoll_System_Collections_Generic_IEnumerable_System_Int32__
+  name: ProcessRoll
+  nameWithType: IPigVariation.ProcessRoll
+  fullName: Pig.Core.IPigVariation.ProcessRoll
+- uid: System.Collections.Generic.IEnumerable{System.Int32}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<int>
+  nameWithType: IEnumerable<int>
+  fullName: System.Collections.Generic.IEnumerable<int>
+  nameWithType.vb: IEnumerable(Of Integer)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Integer)
+  name.vb: IEnumerable(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

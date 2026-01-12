@@ -1,0 +1,76 @@
+### YamlMime:ManagedReference
+items:
+- uid: Pig.Core
+  commentId: N:Pig.Core
+  id: Pig.Core
+  children:
+  - Pig.Core.GameLogic
+  - Pig.Core.GameState
+  - Pig.Core.IPigVariation
+  - Pig.Core.PlayerState
+  - Pig.Core.RollResult
+  langs:
+  - csharp
+  - vb
+  name: Pig.Core
+  nameWithType: Pig.Core
+  fullName: Pig.Core
+  type: Namespace
+  assemblies:
+  - Pig.Core
+references:
+- uid: Pig.Core.GameLogic
+  commentId: T:Pig.Core.GameLogic
+  href: Pig.Core.GameLogic.html
+  name: GameLogic
+  nameWithType: GameLogic
+  fullName: Pig.Core.GameLogic
+- uid: Pig.Core.GameState
+  commentId: T:Pig.Core.GameState
+  parent: Pig.Core
+  href: Pig.Core.GameState.html
+  name: GameState
+  nameWithType: GameState
+  fullName: Pig.Core.GameState
+- uid: Pig.Core.IPigVariation
+  commentId: T:Pig.Core.IPigVariation
+  parent: Pig.Core
+  href: Pig.Core.IPigVariation.html
+  name: IPigVariation
+  nameWithType: IPigVariation
+  fullName: Pig.Core.IPigVariation
+- uid: Pig.Core.PlayerState
+  commentId: T:Pig.Core.PlayerState
+  href: Pig.Core.PlayerState.html
+  name: PlayerState
+  nameWithType: PlayerState
+  fullName: Pig.Core.PlayerState
+- uid: Pig.Core.RollResult
+  commentId: T:Pig.Core.RollResult
+  parent: Pig.Core
+  href: Pig.Core.RollResult.html
+  name: RollResult
+  nameWithType: RollResult
+  fullName: Pig.Core.RollResult
+- uid: Pig.Core
+  commentId: N:Pig.Core
+  href: Pig.html
+  name: Pig.Core
+  nameWithType: Pig.Core
+  fullName: Pig.Core
+  spec.csharp:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
+  spec.vb:
+  - uid: Pig
+    name: Pig
+    href: Pig.html
+  - name: .
+  - uid: Pig.Core
+    name: Core
+    href: Pig.Core.html
