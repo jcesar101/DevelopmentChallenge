@@ -2,6 +2,8 @@
 
 ### Pig (Dice game)
 
+[![CI and Deploy Docs](https://github.com/jcesar101/DevelopmentChallenge/actions/workflows/main.yml/badge.svg)](https://github.com/jcesar101/DevelopmentChallenge/actions/workflows/main.yml)
+
 #### 
 
 #### The Game Rules
